@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="number">Number</label><br>
+    <input type="number" name="number" id ="number" min="100" max="500" required><br><br>
+    <button onclick="info()">validate</button>
+    <p>Lorem ipsum, dolor!</p>
+    <p id="data"></p>
+    <script>
+        // function info(){
+        //     const inpData = document.getElementById("number");
+        //     if(!inpData.checkvalidity()){
+        //         document.getElementById("data").innerHTML = inpData.validationMessage;
+
+        //     }else{
+        //         document.getElementById("data").innerHTML = "Input data is Satisfied";
+        //     }
+
+        // }
+        function info(){
+            let text;
+           if( document.getElementById("number").validity.rangeover){
+           text= " value entered is large";
+        }else {
+            text= "Input data is satisfied";
+        }
+    
+        
+        }
+
+        
+    </script>
+</body>
+</html>

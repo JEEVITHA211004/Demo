@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="checkInfo()">
+    <!-- <h3 onclick="this.innerHTML = 'event change'">click here to change</h3> -->
+    <h2 id="data"></h2>
+    <script>
+        
+        //  * onload and onunload
+        //  * oninput
+        //  * onchange
+        //  * onmouseover and onmouseout
+        function checkInfo() {
+            let data1 = "";
+            if(navigation.infoenabled == true) { 
+                data1 = "info are enebled";
+            }else{
+                data1 = "info are not enabled";
+
+            }
+            document.getElementById("data").innerHTML = data1;
+        }
+        
+    </script>
+</body>
+</html>

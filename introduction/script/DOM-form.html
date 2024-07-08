@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function validateForm() {
+          let x =  document.forms["newform"]["username"].value;
+            if(x == "") {
+            alert("username and password must be filled");
+            return false;
+        }
+    }
+    </script> -->
+</head>
+<body>
+    <!-- <form name="newform" action="DOM.html" onsubmit="return validateform()" method="post">
+        <label for="username">username</label><br>
+        <input type="text" name="username" id ="uname"><br><br>
+        <label for="password" >password</label><br>
+        <input type=" password" name="password" id="pass"><br><br>
+        <input type="submit" value="submit">
+
+    </form> -->
+    <input type="text" name="username" id ="uname" onfocus="data1(this)">
+    <script>
+        // function uppercase() {
+        //     const y = Document.getElementById("uname");
+        //     y.value = y.value.touppercase();
+
+        // }
+        function data1(y) {
+            y.style.background = "blueviolet";
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div {
+            background-color: rgb(160, 99, 217);
+            color: rgb(21, 14, 5);
+            height: 140px;
+            width: 140px;
+            padding: 50px;
+             }
+    </style>
+</head>
+<body>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"> Click here</div>
+        <script>
+            function mDown(info) {
+                info.style.backgroundcolor = "blueviolet";
+                info.innerHTML = "Release";
+            }
+            function mUp(info) {
+                info.style.backgroundcolor = "tomato";
+                info.innerHTML = "Thanks";
+            }
+        </script>
+ 
+</body>
+</html>
